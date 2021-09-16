@@ -13,11 +13,13 @@ public class findKthLargest {
         }
         int left = 0;
         int right = nums.length - 1;
+        //找k最大==找n-k小
         return findUtil(nums,left,right,nums.length - k);
 
     }
 
     public static int findUtil(int nums[],int left,int right,int k){
+        // 开始忘记了将left right 储存下来，在中间切分的时候，left right会变
         int start = left;
         int end = right;
         if(left>=right){
