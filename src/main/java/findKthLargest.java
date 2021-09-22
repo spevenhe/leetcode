@@ -22,6 +22,7 @@ public class findKthLargest {
         // 开始忘记了将left right 储存下来，在中间切分的时候，left right会变
         int start = left;
         int end = right;
+        //加入节省时间，不然等于全部排序了 此时代表着 这是一个排序好的数组了
         if(left>=right){
             return nums[k];
         }
