@@ -1,15 +1,21 @@
-package practice;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class findKthLargest {
 
     public static void main(String[] args) {
 
         int[] a = {3,2,1,5,6,4};
+        int[][] b1 = {a};
+        Arrays.sort(b1, Comparator.comparingInt(a2 -> a2[0]));
         int k = 2;
-        System.out.println(findKthLargest(a,k));
+        System.out.println(Arrays.toString(a));
+//        System.out.println(findKthLargest(a,k));
 
     }
     public static int findKthLargest(int[] nums, int k) {
+
+
         if (nums.length== 0 || k < 1 || k > nums.length){
             return -1;
         }
