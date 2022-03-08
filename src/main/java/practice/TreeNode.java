@@ -1,3 +1,4 @@
+package practice;
 
 public class TreeNode {
     int val;

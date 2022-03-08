@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Map;
+package practice;
 
 public class InvertBinaryTree226 {
 

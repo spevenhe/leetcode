@@ -1,3 +1,5 @@
+package practice;
+
 public class binaryTree106 {
 
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class binaryTree106 {
     }
 
     public static TreeNode build(int[] inorder, int instart, int inend,
-                          int[] postorder, int poststart, int postend){
+                                 int[] postorder, int poststart, int postend){
         if(instart > inend || poststart > postend){
             return null;
         }
