@@ -15,6 +15,9 @@ public class postOrder {
         a.right = c;
         c.right = d;
         System.out.println(postorderTraversal(a).toString());
+        String a1 = "asd";
+        String a2 = "asd";
+
 
     }
 

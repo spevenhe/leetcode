@@ -11,6 +11,8 @@ public class TestDS {
 //        StringBuffer
         int[] nums = {1,2,3,1,2,3,1,2,3};
         System.out.println(findNumberOfLIS(nums));
+
+
     }
 
     public static int findNumberOfLIS(int[] nums) {
