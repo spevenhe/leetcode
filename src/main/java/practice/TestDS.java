@@ -11,6 +11,10 @@ public class TestDS {
 //        StringBuffer
         int[] nums = {1,2,3,1,2,3,1,2,3};
         System.out.println(findNumberOfLIS(nums));
+        String a = "asd";
+        String b = "asd";
+        a = a+'b';
+        System.out.println(b);
 
 
     }

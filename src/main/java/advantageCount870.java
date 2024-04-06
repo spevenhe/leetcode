@@ -24,6 +24,7 @@ public class advantageCount870 {
             else {
                 res[map.get(value[0])] = nums1[left];
                 left++;
+
             }
         }
         return res;
