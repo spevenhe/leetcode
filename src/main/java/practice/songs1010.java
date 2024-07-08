@@ -1,3 +1,5 @@
+package practice;
+
 public class songs1010 {
     public static void main(String[] args) {
 

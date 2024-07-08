@@ -68,6 +68,51 @@ public class maxSlidingWindow239 {
     }
 
 
+    public int[] solution2(int[] nums, int k) {
+        int[] res = new int[nums.length - k + 1];
+        int index = 0;
+        seqList sl = new seqList();
+        for(int i=0;i<nums.length;i++){
+            if(i<k){
+                sl.push(nums[i]);
+                if(i == k-1){
+                    res[index] = sl.peekMax();
+                    index++;
+                }
+            }
+            else{
+                sl.push(nums[i]);
+                if(sl.peekMax() == nums[i-k]){
+                    sl.removeFirst();
+                }
+                res[index] = sl.peekMax();
+                index++;
+
+            }
+        }
+        return res;
+    }
+
+    public class seqList{
+        private LinkedList<Integer> list = new LinkedList<>();
+
+        public void push(int num){
+            while (!list.isEmpty() && list.getLast() < num){
+                list.removeLast();
+            }
+            list.addLast(num);
+        }
+
+        public int peekMax(){
+            return list.peekFirst();
+        }
+
+        public void removeFirst(){
+            list.removeFirst();
+        }
+    }
+
+
 }
 
 
